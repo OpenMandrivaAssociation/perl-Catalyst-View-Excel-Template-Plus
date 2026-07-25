@@ -1,15 +1,15 @@
 %define upstream_name    Catalyst-View-Excel-Template-Plus
-%define upstream_version 0.03
+%define upstream_version 0.04
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	5
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	Excel::Plus View
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Catalyst/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://github.com/stevan/catalyst-view-excel-template-plus
+Source0:	https://cpan.metacpan.org/authors/id/S/ST/STEVAN/Catalyst-View-Excel-Template-Plus-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
