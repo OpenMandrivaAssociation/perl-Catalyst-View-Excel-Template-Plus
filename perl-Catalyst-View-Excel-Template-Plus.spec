@@ -1,15 +1,13 @@
 %define upstream_name    Catalyst-View-Excel-Template-Plus
-%define upstream_version 0.04
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	0.04
+Release:	2
 
 Summary:	Excel::Plus View
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/stevan/catalyst-view-excel-template-plus
-Source0:	https://cpan.metacpan.org/authors/id/S/ST/STEVAN/Catalyst-View-Excel-Template-Plus-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/S/ST/STEVAN/Catalyst-View-Excel-Template-Plus-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -27,7 +25,7 @@ This is a Catalyst View subclass which can handle rendering excel content
 through Excel::Template::Plus.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
